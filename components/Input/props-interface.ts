@@ -1,5 +1,7 @@
 interface propsInterface {
-  buttonText: string
+  id: string
+  type: string
+  children?: any
 }
 
 export default propsInterface
