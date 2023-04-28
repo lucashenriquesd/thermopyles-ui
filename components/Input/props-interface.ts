@@ -1,7 +1,8 @@
 interface propsInterface {
   id: string
   type: string
-  children?: any
+  value: string
+  onChange: any
 }
 
 export default propsInterface

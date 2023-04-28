@@ -14,7 +14,9 @@ const Input = (props: propsInterface) => {
         focus:outline-none
         focus:shadow-outline
       `}
-    >{props.children}</input>
+      value={props.value}
+      onChange={props.onChange}
+    />
   )
 }
 

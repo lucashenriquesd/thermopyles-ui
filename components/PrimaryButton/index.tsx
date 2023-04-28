@@ -18,6 +18,7 @@ const PrimaryButton = (props: propsInterface) => {
     <button
       className={defaultClassName}
       type="button"
+      onClick={props.onClick}
     >
       {props.buttonText}
     </button>
