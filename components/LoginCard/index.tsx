@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Input from "../Input"
-import PrimaryButton from "../PrimaryButton"
+import Button from "../Button"
 import propsInterface from "./props-interface"
 
 const LoginCard = (props: propsInterface) => {
@@ -36,7 +36,8 @@ const LoginCard = (props: propsInterface) => {
           <label htmlFor="password" className="block text-gray-700 font-bold mb-2">Password</label>
           <Input id="password" type="password" value={password} onChange={(e: any) => setPassword(e.target.value)} />
         </div>
-        <PrimaryButton buttonText="Login" onClick={handleSubmit} />
+        <Button type="primary" buttonText="Login" onClick={handleSubmit} className="mb-6" />
+        <Button type="secondary" buttonText="Reset Password" />
       </form>
     </div>
   )
